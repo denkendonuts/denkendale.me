@@ -1,0 +1,218 @@
+body {
+	font-family: "Lato";
+	font-size: 18px;
+	line-height: 1.5;
+	
+	background-color: #ffffff;
+	color: #333333;
+	margin: 0 auto 300px auto;
+	width: 900px;
+  transition: background-color 1s;
+}
+
+a {
+
+  text-decoration: none;
+}
+header a{
+  color: black;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  padding: 40px;
+  transition: top 2s;
+}
+
+header.hide {
+  top: -100px;
+}
+
+h1 {
+  float: left;
+	font-weight: 700;
+}
+
+nav {
+  float: right;
+}
+
+nav a {
+  color: #333333;
+  text-decoration: none;
+    transition:  border 0.3s ease-in;
+  border-bottom: solid 2px rgba(0,0,0,0);
+  padding-bottom: 3px;
+  margin: 0 0 0 15px;
+}
+
+nav a:hover{
+   border-color:#555;
+}
+
+section {
+  padding: 100px 0 100px 0;
+}
+
+section img {
+  width: 100%;
+  height: 100%;
+}
+
+.hero {
+  height: 100vh;
+  
+    display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero h1{
+margin-left: 100px;
+}
+
+.photo{
+  position: relative;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 1;
+  transition: opacity 0.3s;
+   display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.photo:hover .overlay{
+  opacity: 1;
+}
+.photo img{
+  transition: all 0.3s ease;
+}
+.photo:hover img{
+  filter: grayscale(1) brightness(0.3);
+}
+.photo h2 {
+color: white;
+}
+.photo h1 {
+font-size: 42px;
+color: white;
+}
+
+.photo a{
+transition:  border 0.3s ease-in;
+  border-bottom: solid 2px rgba(0,0,0,0);
+  padding-bottom: 3px;
+}
+
+.photo a:hover{
+  border-color:#555;
+}
+
+
+#contact {
+  margin-top: 4rem;
+  display: flex;
+ align-items: flex-start;
+}
+
+
+input::placeholder, textarea::placeholder {
+  color: #aca49c;
+  font-size: 0.875em;
+}
+
+input:focus::placeholder, textarea::focus:placeholder {
+  color: #bbb5af;
+}
+
+
+
+
+
+
+
+#form {
+  position: relative;
+  width: 470px;
+}
+
+input {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.875em;
+  width: 470px;
+  height: 50px;
+  padding: 0px 15px 0px 15px;
+  
+  background: transparent;
+  outline: none;
+  color: #726659;
+  
+  border: solid 1px #b3aca7;
+  border-bottom: none;
+  
+  transition: all 0.3s ease-in-out;
+
+}
+
+
+
+textarea {
+  width: 470px;
+  max-width: 470px;
+  height: 110px;
+  max-height: 110px;
+  padding: 15px;
+  
+  background: transparent;
+  outline: none;
+  
+  color: #726659;
+  
+  font-size: 0.875em;
+  
+  border: solid 1px #b3aca7;
+  
+  transition: all 0.3s ease-in-out;
+
+}
+
+
+#submit {
+
+  
+  padding: 0;
+  margin: -5px 0px 0px 0px;
+  
+
+  font-size: 0.875em;
+  color: #000000;
+  
+  outline:none;
+  cursor: pointer;
+  
+  border: solid 1px #b3aca7;
+  border-top: none;
+}
+
+#submit:hover {
+  color: #e2dedb;
+}
+
+#contact div{
+  padding-left: 2rem;
+}
+
+.project-page{
+  display:flex;
+}
